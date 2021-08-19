@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+.home{
+  align-items: center;
+  justify-content: center;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+.button-easy{
+  align-items: center;
+  justify-content: center;
+  background-color: #16DB93;
+  width: 60%;
+  height: 3rem;
+  margin-top: 4%;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.18rem;
+  cursor: pointer;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  box-shadow: 5px 10px;
+}
+.button-medium{
+  align-items: center;
+  justify-content: center;
+  background-color: #E4FF1A;
+  height: 3rem;
+  width: 60%;
+  margin-top: 4%;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.18rem;
+  cursor: pointer;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  box-shadow: 5px 10px;
+}
+.button-hard{
+  align-items: center;
+  justify-content: center;
+  background-color: #DD403A;
+  height: 3rem;
+  width: 60%;
+  margin-top: 4%;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.18rem;
+  cursor: pointer;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  box-shadow: 5px 10px;
+}
+.text{
+  font-size: 2.0rem;
+}
+.text-home{
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.icon{
+  height: 6rem;
+  width: 6rem;
+  margin-left: 0.6rem;
+  margin-top: 4%;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.25rem;
+  cursor:pointer;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+	transition: 500ms;
+  box-shadow: 3px 8px;
+}
+.inline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	cursor: pointer;
+	font-size: 20px;
+  border-radius: 0.4rem;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+	letter-spacing: 5px;
+	background: white;
+	border: 2px solid black;
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+	transition: 500ms;
+  box-shadow: 3px 8px;
+}
+
+button:after {
+	content: '';
+	position: absolute;
+	transform: translateX(-55px) translateY(-40px);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: transparent;
+	box-shadow: 0px 0px 50px transparent;
+	transition: 500ms;
+}
+
+button:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+.icon:after {
+	content: '';
+	position: absolute;
+	transform: translateX(-55px) translateY(-40px);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: transparent;
+	box-shadow: 0px 0px 50px transparent;
+	transition: 500ms;
+}
+
+.icon:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+.sobre{
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 6rem;
+}
+.option{
+  padding: 0.5rem 1rem;
+  background-color: white;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.25rem;
+  cursor:pointer;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+	transition: 500ms;
+  box-shadow: 3px 8px;
+}
+.input{
+  opacity: 1;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box { margin: 20px; }
+
+.option-image{
+  height: auto;
+  width: 400px;
+  border-radius: 0.4rem;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.25rem;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+	transition: 500ms;
+  box-shadow: 3px 8px;
+  margin-bottom: 2%;
+}
+.text-question{
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  color:white;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
