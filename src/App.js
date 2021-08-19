@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Start from './components/Start'
 import './App.css';
+import End from './components/End'
 import Questions from './components/Questions';
 import quizData from './data/quiz.json'
 function App() {
@@ -22,6 +23,10 @@ function App() {
       activeQuestion={activeQuestion}
       onSetActiveQuestion={setActiveQuestion}
       onSetStep={setStep}
+      />}
+      {step === 3 && <End 
+      results={answers}
+      data={quizData.data}
       />}
     </div>
   );
