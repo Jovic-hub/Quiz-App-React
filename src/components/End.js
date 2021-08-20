@@ -12,10 +12,20 @@ const End = ({results, data}) => {
         });
         setCorrectAsnwers(correct);
     },[]);
+    if(correctAnswers < 5){
     return(
         <div>
             <p class = "text-question">{correctAnswers}</p>
+            <p>Falhou</p>
         </div>
     )
+    }else{
+    return(
+        <div>
+            <p class = "text-question">{correctAnswers}</p>
+            <p>Parabens</p>
+        </div>
+    )
+    }
 }
 export default End;

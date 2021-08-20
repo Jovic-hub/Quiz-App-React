@@ -3,7 +3,6 @@ import killua from './images/original.jpg'
 const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep})=>{
 
     let[selected, setSelected] = useState('');
-    const[error, setError]=useState('');
     const radioWrapper = useRef();
 
     const changeHandler = (e)=>{
@@ -13,11 +12,11 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     const nextClickHandler=(e)=>{
         onAnswerUpdate(prevState => [...prevState,{q: data.question, a: selected}]);
         setSelected('');
-        if(activeQuestion < numberOfQuestions -1){
+        if(activeQuestion < 10){
             console.log(selected);
             onSetActiveQuestion(activeQuestion + 1);
         }else{
-            onSetStep(3);
+            onSetStep(5);
         }
     }
     return(
@@ -34,8 +33,8 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             </label>
             </div></div>
             ))}
-            <button className="button is-link is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button>
             </div>
+            <button className="option-next" onClick={nextClickHandler}>Próxima</button>
         </div>
         </center>
     )

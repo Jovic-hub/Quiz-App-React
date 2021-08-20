@@ -1,7 +1,7 @@
 {
     "data": [
       {
-        "question": "What is the capital of Croatia ?",
+        "question": "Whaaaaaat is the capital of Croatia ?",
         "choices": ["Split", "Osijek", "Zagreb", "Rijeka"],
         "answer": "Zagreb"
       },
@@ -41,19 +41,29 @@
         "answer": "Bucharest"
       },
       {
-        "question": "What is the capital of Brazil ?",
+        "question": "What is the capital of Germany ?",
         "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
         "answer": "Berlin"
-    },
-    {
-      "question": "What is the capital of Argentina ?",
-      "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
-      "answer": "Berlin"
-    },
-    {
-      "question": "What is the capital of Chile ?",
-      "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
-      "answer": "Berlin"
-    }
+      },
+      {
+        "question": "What is the capital of Germany ?",
+        "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "answer": "Berlin"
+      },
+      {
+        "question": "What is the capital of Germany ?",
+        "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "answer": "Berlin"
+      },
+      {
+        "question": "What is the capital of Germany ?",
+        "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "answer": "Berlin"
+      },
+      {
+        "question": "What is the capital of Germany ?",
+        "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "answer": "Berlin"
+      }
     ]
   }

@@ -5,7 +5,7 @@ import medio from './medio.jpg'
 import dificil from './dificil.jpg'
 
 
-const Start = ({onQuizStart})=>{
+const Start = ({onQuizStart, onQuizStart_med, onQuizStart_hard})=>{
     return(
         <div class ="home">
             <center>
@@ -16,12 +16,12 @@ const Start = ({onQuizStart})=>{
                 <img class ="icon" onClick={onQuizStart} src={facil}/>
             </div>
             <div class ="inline">
-                <button class ="button-medium"onClick={onQuizStart}>Médio</button>
-                <img class ="icon" onClick={onQuizStart}  src={medio}/>
+                <button class ="button-medium"onClick={onQuizStart_med}>Médio</button>
+                <img class ="icon" onClick={onQuizStart_med}  src={medio}/>
             </div>
             <div class ="inline">
-                <button class ="button-hard"onClick={onQuizStart}>Díficil</button>
-                <img class ="icon" onClick={onQuizStart} src={dificil}/>
+                <button class ="button-hard"onClick={onQuizStart_hard}>Díficil</button>
+                <img class ="icon" onClick={onQuizStart_hard} src={dificil}/>
             </div>
             </center>
         </div>
