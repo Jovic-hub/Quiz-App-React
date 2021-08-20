@@ -12,7 +12,7 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     const nextClickHandler=(e)=>{
         onAnswerUpdate(prevState => [...prevState,{q: data.question, a: selected}]);
         setSelected('');
-        if(activeQuestion < 10){
+        if(activeQuestion < numberOfQuestions){
             console.log(selected);
             onSetActiveQuestion(activeQuestion + 1);
         }else{

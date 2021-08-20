@@ -7,10 +7,25 @@ import quizData from './data/quiz.json'
 import quizData_med from './data/quiz_med.json';
 import quizData_hard from './data/quiz_hard.json'
 
+function getRandom(arr) {
+  let myArr = [...arr];  //copy arr we pass in
+  let randomizedArr = []; //gets popuated by loop
+
+  while (myArr.length > 0) {
+      var randomIndex = Math.floor(Math.random() * myArr.length); //create random number
+      randomizedArr.push(myArr[randomIndex]); //add choice randomly to arr
+      myArr.splice(randomIndex, 1); //cut out a piece of the array then resart loop
+      console.log(randomIndex);
+  }
+  //when loop has finished, return random array
+  return randomizedArr;
+}
+
 function App() {
   const [step, setStep] = useState(1);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [answers, setAnswers] = useState([])
+
 
   const quizStartHandler = () =>{
     setStep(2);
@@ -22,22 +37,8 @@ function App() {
     setStep(4);
   }
 
-  function getRandom(arr, n) {
-    var result = new Array(n),
-        len = arr.length,
-        taken = new Array(len);
-    if (n > len)
-        throw new RangeError("getRandom: more elements taken than available");
-    while (n--) {
-        var x = Math.floor(Math.random() * len);
-        result[n] = arr[x in taken ? taken[x] : x];
-        taken[x] = --len in taken ? taken[len] : len;
-    }
-    return result;
-  }
-
   const questions = quizData.data;
-  var random = getRandom(questions, 11)
+  var random = getRandom(questions)
 
 return (
   <div class = "App">
@@ -48,7 +49,7 @@ return (
       />}
       {step === 2 && <Questions data={random[activeQuestion]} 
       onAnswerUpdate={setAnswers} 
-      numberOfQuestions={random.length} 
+      numberOfQuestions={10} 
       activeQuestion={activeQuestion}
       onSetActiveQuestion={setActiveQuestion}
       onSetStep={setStep}
