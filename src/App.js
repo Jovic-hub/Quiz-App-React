@@ -21,6 +21,9 @@ function getRandom(arr) {
   return randomizedArr;
 }
 
+const questions = quizData.data;
+var random = getRandom(questions)
+
 function App() {
   const [step, setStep] = useState(1);
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -36,9 +39,6 @@ function App() {
   const quizStartHandler_hard = () =>{
     setStep(4);
   }
-
-  const questions = quizData.data;
-  var random = getRandom(questions)
 
 return (
   <div class = "App">
