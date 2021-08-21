@@ -143,7 +143,7 @@ button:hover {
   width: 6rem;
 }
 .option{
-  margin-top: 4%;
+  margin: 5% 5%;
   padding: 0.5rem 1rem;
   background-color: white;
   font-size: 100%;
@@ -241,7 +241,7 @@ html, body {
 .text-question{
   font-family: 'Atkinson Hyperlegible', sans-serif;
   color:white;
-  font-size: 150%;
+  font-size: 180%;
   margin-bottom: 2%;
   max-width: 60%;
   height: auto;

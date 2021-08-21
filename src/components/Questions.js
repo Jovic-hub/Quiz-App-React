@@ -1,5 +1,7 @@
 import React, {useState, useEffect, useRef}from 'react';
+import './index-s.scss';
 import error_image from './images/error.gif'
+
 const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep, finalStep})=>{
 
     let[selected, setSelected] = useState('');
@@ -32,18 +34,18 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             <h1 class ="text-question">{activeQuestion+1}/{numberOfQuestions}</h1>
             <h2 class ="text-question">{data.question}</h2>
             <img class ="option-image" src = {image}></img>
-            <div class="grid2x2">
+            <div class="buttons">
             {data.choices.map((choice, i) =>(
-            <div class="box box" ref={radioWrapper}><div>
-            <label key={i}> 
-                <input type="button" class="option" name="answer" value={choice} onClick={changeHandler} />
-            </label>
-            </div></div>
+            <div class ="button-wrapper">
+                <button className="button" name="answer" value={choice} onClick={changeHandler}>{choice}</button>
+            </div>
             ))}
             </div>
+
+
             {error && <div><img class ="error-image" src = {error_image}></img></div>}
             {error && <div className="error">{error}</div>}
-            <button className="option-next" onClick={nextClickHandler}>Próxima</button>
+                <button className="next" onClick={nextClickHandler}>Próxima</button>
             </center>
         </div>
     )
