@@ -31,15 +31,11 @@ body {
     align-items: center;
     transition: box-shadow 0.3s ease;
     cursor: pointer;
-    
+    outline: 0;
     &:hover {
       box-shadow: 10px 10px 0 0 black;
     }
-    &:focus{
-        background-color: lime;
-        transform: translateY(-5px);
-        box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
-    }
+
   }
   
   .next {
@@ -52,6 +48,7 @@ body {
     &:hover {
         box-shadow: 10px 10px 0 0 black;
     }
+    outline: 0;
   }
   
   @media only screen and (max-width: 400px) {
