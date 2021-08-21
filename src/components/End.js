@@ -5,7 +5,7 @@ const End = ({results, data}) => {
     useEffect(()=>{
         let correct = 0;
         results.forEach((result, index)=>{
-            console.log(result.a)
+            console.log(data[index].answer)
             if(result.a === data[index].answer){
                 correct++;
             }

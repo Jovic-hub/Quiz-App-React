@@ -2,67 +2,80 @@
     "data": [
       {
         "question": "Whattttttt is the capital of Croatia ?",
+        "image": "1",
         "choices": ["Split", "Osijek", "Zagreb", "Rijeka"],
         "answer": "Zagreb"
       },
       {
         "question": "What is the capital of Slovenia ?",
+        "image": "1",
         "choices": ["Celje", "Ljubljana", "Maribor", "Koper"],
         "answer": "Ljubljana"
       },
       {
         "question": "What is the capital of Austria ?",
+        "image": "1",
         "choices": ["Graz", "Salzburg", "Innsbruck", "Vienna"],
         "answer": "Vienna"
       },
       {
         "question": "What is the capital of Serbia ?",
+        "image": "1",
         "choices": ["Belgrade", "Novi Sad", "Niš", "Subotica"],
         "answer": "Belgrade"
       },
       {
         "question": "What is the capital of Bosnia and Herzegovina ?",
+        "image": "1",
         "choices": ["Mostar", "Sarajevo", "Banja Luka", "Tuzla"],
         "answer": "Sarajevo"
       },
       {
         "question": "What is the capital of Hungary ?",
+        "image": "1",
         "choices": ["Zalaegerszeg", "Eger", "Szeged", "Budapest"],
         "answer": "Budapest"
       },
       {
         "question": "What is the capital of Slovakia ?",
         "choices": ["Košice", "Nitra", "Bratislava", "Poprad"],
+        "image": "1",
         "answer": "Bratislava"
       },
       {
         "question": "What is the capital of Romania ?",
         "choices": ["Bucharest", "Craiova", "Constanta", "Braila"],
+        "image": "1",
         "answer": "Bucharest"
       },
       {
         "question": "What is the capital of Germany ?",
         "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "image": "1",
         "answer": "Berlin"
       },
       {
         "question": "What is the capital of Germany ?",
         "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "image": "1",
         "answer": "Berlin"
       },
       {
         "question": "What is the capital of Germany ?",
         "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "image": "1",
         "answer": "Berlin"
       },
       {
         "question": "What is the capital of Germany ?",
         "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "image": "1",
         "answer": "Berlin"
       },
       {
         "question": "What is the capital of Germany ?",
         "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
+        "image": "1",
         "answer": "Berlin"
       }
     ]

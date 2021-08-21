@@ -20,7 +20,7 @@ const Start = ({onQuizStart, onQuizStart_med, onQuizStart_hard})=>{
                 <img class ="icon" onClick={onQuizStart_med}  src={medio}/>
             </div>
             <div class ="inline">
-                <button class ="button-hard"onClick={onQuizStart_hard}>Díficil</button>
+                <button class ="button-hard"onClick={onQuizStart_hard}>Dificil</button>
                 <img class ="icon" onClick={onQuizStart_hard} src={dificil}/>
             </div>
             </center>

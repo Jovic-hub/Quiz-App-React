@@ -22,7 +22,11 @@ function getRandom(arr) {
 }
 
 const questions = quizData.data;
+const questions_med = quizData_med.data;
+const questions_hard = quizData_hard.data;
 var random = getRandom(questions)
+var random_med = getRandom(questions_med)
+var random_hard = getRandom(questions_hard)
 
 function App() {
   const [step, setStep] = useState(1);
@@ -40,6 +44,7 @@ function App() {
     setStep(4);
   }
 
+
 return (
   <div class = "App">
       {step === 1 && <Start 
@@ -49,29 +54,39 @@ return (
       />}
       {step === 2 && <Questions data={random[activeQuestion]} 
       onAnswerUpdate={setAnswers} 
+      numberOfQuestions={5} 
+      activeQuestion={activeQuestion}
+      onSetActiveQuestion={setActiveQuestion}
+      onSetStep={setStep}
+      finalStep={5}
+      />}
+      {step === 3 && <Questions data={random_med[activeQuestion]} 
+      onAnswerUpdate={setAnswers} 
       numberOfQuestions={10} 
       activeQuestion={activeQuestion}
       onSetActiveQuestion={setActiveQuestion}
       onSetStep={setStep}
+      finalStep={6}
       />}
-      {step === 3 && <Questions data={quizData_med.data[activeQuestion]} 
+      {step === 4 && <Questions data={random_hard[activeQuestion]} 
       onAnswerUpdate={setAnswers} 
-      numberOfQuestions={quizData_med.data.length} 
+      numberOfQuestions={10} 
       activeQuestion={activeQuestion}
       onSetActiveQuestion={setActiveQuestion}
       onSetStep={setStep}
-      />}
-      {step === 4 && <Questions data={quizData_hard.data[activeQuestion]} 
-      onAnswerUpdate={setAnswers} 
-      numberOfQuestions={quizData_hard.data.length} 
-      activeQuestion={activeQuestion}
-      onSetActiveQuestion={setActiveQuestion}
-      onSetStep={setStep}
+      finalStep={7}
       />}
       {step === 5 && <End 
       results={answers}
-      data={random && quizData_med.data && quizData_hard.data}
-
+      data={random}
+      />}
+      {step === 6 && <End 
+      results={answers}
+      data={random_med}
+      />}
+      {step === 7 && <End 
+      results={answers}
+      data={random_hard}
       />}
     </div>
   );

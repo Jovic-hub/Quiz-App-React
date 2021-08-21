@@ -1,10 +1,9 @@
 import React, {useState, useEffect, useRef}from 'react';
-import killua from './images/original.jpg'
-const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep})=>{
+import killua from './images/1.jpg'
+const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep, finalStep})=>{
 
     let[selected, setSelected] = useState('');
     const radioWrapper = useRef();
-
     const changeHandler = (e)=>{
         setSelected(e.target.value);
     }
@@ -12,19 +11,20 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     const nextClickHandler=(e)=>{
         onAnswerUpdate(prevState => [...prevState,{q: data.question, a: selected}]);
         setSelected('');
-        if(activeQuestion < numberOfQuestions){
+        if(activeQuestion < numberOfQuestions - 1){
             console.log(selected);
             onSetActiveQuestion(activeQuestion + 1);
         }else{
-            onSetStep(5);
+            onSetStep(finalStep);    
         }
     }
+    let image = require(`./images/${data.image}`).default;
     return(
-        <center>
-        <div class ="question">
-            <a class ="text-question">{activeQuestion}/10</a>
+        <div class ="home">
+            <center>
+            <h1 class ="text-question">{activeQuestion+1}/{numberOfQuestions}</h1>
             <h2 class ="text-question">{data.question}</h2>
-            <img class ="option-image" src = {killua}></img>
+            <img class ="option-image" src = {image}></img>
             <div class="grid2x2">
             {data.choices.map((choice, i) =>(
             <div class="box box" ref={radioWrapper}><div>
@@ -35,8 +35,8 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             ))}
             </div>
             <button className="option-next" onClick={nextClickHandler}>Próxima</button>
+            </center>
         </div>
-        </center>
     )
 }
 
