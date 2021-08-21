@@ -37,7 +37,7 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             <div class="buttons">
             {data.choices.map((choice, i) =>(
             <div class ="button-wrapper">
-                <button className="button" name="answer" value={choice} onClick={changeHandler}>{choice}</button>
+                <button className={`${selected === i ? 'selected' : ''}`} name="answer" value={choice} onClick={changeHandler}>{choice}</button>
             </div>
             ))}
             </div>
