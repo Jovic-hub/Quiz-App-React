@@ -156,7 +156,7 @@ button:hover {
   box-shadow: 3px 8px;
 }
 .option-next{
-  margin-top: 8%;
+  margin-top: 4%;
   padding: 0.5rem 1rem;
   background-color: white;
   font-size: 1.5rem;
@@ -241,4 +241,17 @@ html, body {
   margin-bottom: 2%;
   max-width: 60%;
   height: auto;
+}
+.error{
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  color:white;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+.error-image{
+  margin-bottom: 0;
+  width: 200px;
 }

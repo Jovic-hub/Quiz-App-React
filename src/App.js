@@ -62,7 +62,7 @@ return (
       />}
       {step === 3 && <Questions data={random_med[activeQuestion]} 
       onAnswerUpdate={setAnswers} 
-      numberOfQuestions={10} 
+      numberOfQuestions={5} 
       activeQuestion={activeQuestion}
       onSetActiveQuestion={setActiveQuestion}
       onSetStep={setStep}
@@ -70,7 +70,7 @@ return (
       />}
       {step === 4 && <Questions data={random_hard[activeQuestion]} 
       onAnswerUpdate={setAnswers} 
-      numberOfQuestions={10} 
+      numberOfQuestions={5} 
       activeQuestion={activeQuestion}
       onSetActiveQuestion={setActiveQuestion}
       onSetStep={setStep}

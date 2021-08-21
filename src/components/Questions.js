@@ -1,14 +1,21 @@
 import React, {useState, useEffect, useRef}from 'react';
-import killua from './images/1.jpg'
+import error_image from './images/error.gif'
 const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep, finalStep})=>{
 
     let[selected, setSelected] = useState('');
+    const [error, setError] = useState('');
     const radioWrapper = useRef();
     const changeHandler = (e)=>{
         setSelected(e.target.value);
+        if(error) {
+            setError('');
+        }
     }
 
     const nextClickHandler=(e)=>{
+        if(selected === '') {
+            return setError('Selecione uma opção!');
+        }
         onAnswerUpdate(prevState => [...prevState,{q: data.question, a: selected}]);
         setSelected('');
         if(activeQuestion < numberOfQuestions - 1){
@@ -34,6 +41,8 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             </div></div>
             ))}
             </div>
+            {error && <div><img class ="error-image" src = {error_image}></img></div>}
+            {error && <div className="error">{error}</div>}
             <button className="option-next" onClick={nextClickHandler}>Próxima</button>
             </center>
         </div>
