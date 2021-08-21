@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
   }
   
-  .button {
+  button {
     border: 3px solid black;
     background: white;
     border-radius: 5px;
@@ -38,6 +38,18 @@ body {
     }
   }
   
+  .selected {
+    background: lime;
+    box-shadow: 10px 10px 0 0 black;
+    outline: 0;
+    &:focus{
+        outline: 0;
+    }
+    &:active{
+        outline: 0;
+    }
+  }
+
   .next {
     padding: 0.5em;
     width: 80vw;
