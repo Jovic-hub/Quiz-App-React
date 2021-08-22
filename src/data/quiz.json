@@ -29,6 +29,31 @@
         "image": "5_easy.jpg",
         "choices": ["Emissão", "Materialização", "Reforço", "Transformação"],
         "answer": "Reforço"
-      }    
+      },
+      {
+        "question": "Quais são as cores do skate do Killua?",
+        "image": "6_easy.jpg",
+        "choices": ["Azul e Vermelho", "Azul e Verde", "Amarelo e Azul", "Amarelo e Vermelho"],
+        "answer": "Amarelo e Vermelho"
+      },
+      {
+        "question": "Qual personagem luta contra o Gon na ultima etapa do exame Hunter?",
+        "image": "7_easy.jpg",
+        "choices": ["Hisoka", "Hanzo", "Pokkle", "Illumi"],
+        "answer": "Hanzo"
+      },
+      {
+        "question": "Quem é o primeiro examinador do 287º Exame Hunter?",
+        "image": "8_easy.jpg",
+        "choices": ["Satotz", "Lippo", "Menchi", "Netero"],
+        "answer": "Satotz"
+      },
+      {
+        "question": "Onde Gon foi criado?",
+        "image": "9_easy.jpg",
+        "choices": ["Ilha Freecs", "Ilha do Peixe", "Ilha da pesca", "Ilha da Baleia"],
+        "answer": "Ilha da Baleia"
+      }
+      
     ]
   }
