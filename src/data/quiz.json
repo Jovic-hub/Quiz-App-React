@@ -53,7 +53,13 @@
         "image": "9_easy.jpg",
         "choices": ["Ilha Freecs", "Ilha do Peixe", "Ilha da pesca", "Ilha da Baleia"],
         "answer": "Ilha da Baleia"
-      }
+     },
+     {
+        "question": "Qual tipo de Nen não existe em Hunter x Hunter?",
+        "image": "10_easy.jpg",
+        "choices": ["Reforço", "Materialização", "Especialização", "Eliminação"],
+        "answer": "Eliminação"
+      }   
       
     ]
   }

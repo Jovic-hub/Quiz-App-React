@@ -1,34 +1,22 @@
 {
   "data": [
     {
-      "question": "Qual o nome do Pai do Gon?",
-      "image": "1_easy.jpg",
-      "choices": ["Jing", "Ging", "Gong", "Gin"],
-      "answer": "Ging"
+      "question": "Quem é este personagem?",
+      "image": "1_med.jpg",
+      "choices": ["Kattsuo", "Mizaistom Nana", "Katsuo", "Mizaeda Nana"],
+      "answer": "Mizaistom Nana"
     },
     {
-      "question": "Qual o sobrenome do Hisoka?",
-      "image": "2_easy.jpg",
-      "choices": ["Morow", "Marow", "Molow", "Merew"],
-      "answer": "Morow"
+      "question": "Quem não faz parte dos empregados da Família Zoldyck?",
+      "image": "2_med.jpg",
+      "choices": ["Siiquant", "Zoro", "Zebulo", "Canary"],
+      "answer": "Zoro"
     },
     {
-      "question": "No jogo Greed Island, qual o comando de voz que o Jogador tem que fazer pra abrir o livro de cartas?",
-      "image": "3_easy.jpg",
-      "choices": ["Card", "Hook", "Book", "Open"],
-      "answer": "Book"
-    },
-    {
-      "question": "Quem é o Lider da Trupe Fantasma?",
-      "image": "4_easy.jpg",
-      "choices": ["Chrollo Lucilfer", "Feitan Portor", "Hisoka", "Uvogin"],
-      "answer": "Chrollo Lucilfer"
-    },
-    {
-      "question": "Qual o tipo de Nen do Gon?",
-      "image": "5_easy.jpg",
-      "choices": ["Emissão", "Materialização", "Reforço", "Transformação"],
-      "answer": "Reforço"
-    }    
+      "question": "Qual o jogo que Meruem e Komugi jogavam?",
+      "image": "3_med.jpg",
+      "choices": ["Gungi", "Senji", "Wing", "Mungi"],
+      "answer": "Gungi"
+    }
     ]
   }
