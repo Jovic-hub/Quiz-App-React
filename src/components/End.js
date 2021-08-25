@@ -7,7 +7,6 @@ const End = ({results, data, diff}) => {
     useEffect(()=>{
         let correct = 0;
         results.forEach((result, index)=>{
-            console.log(data[index].answer)
             if(result.a === data[index].answer){
                 correct++;
             }
@@ -25,7 +24,7 @@ const End = ({results, data, diff}) => {
                     <h2>Acertos: {correctAnswers}</h2>
                     <h2>Erros: {numOfQuest- correctAnswers}</h2>
                     <h2>Dificuldade: Fácil</h2>
-                    <h3>Mandou muito bem, acho que esta na hora de mudar de dificuldade.</h3>
+                    <h3>Mandou bem, acho que está na hora de mudar de dificuldade.</h3>
                     </div>
                     <img class ="option-image" src ={easy_1}></img> 
                     </div>

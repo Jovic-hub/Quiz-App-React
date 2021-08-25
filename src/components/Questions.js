@@ -21,7 +21,6 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
         onAnswerUpdate(prevState => [...prevState,{q: data.question, a: selected}]);
         setSelected('');
         if(activeQuestion < numberOfQuestions - 1){
-            console.log(selected);
             onSetActiveQuestion(activeQuestion + 1);
         }else{
             onSetStep(finalStep);    

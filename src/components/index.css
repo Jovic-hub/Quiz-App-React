@@ -207,7 +207,7 @@ html, body {
 .box { margin: 20px; }
 
 .option-image{
-  width: 22rem;
+  width: 50%;
   height: auto;
   border-radius: 0.4rem;
   border-color: black;
@@ -242,7 +242,6 @@ html, body {
   font-family: 'Atkinson Hyperlegible', sans-serif;
   color:white;
   font-size: 180%;
-  margin-bottom: 2%;
   max-width: 60%;
   height: auto;
 }
