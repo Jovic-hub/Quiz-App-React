@@ -51,8 +51,6 @@ const Questions = ({data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             </div>
             ))}
             </div>
-
-
             {error && <div><img class ="error-image" src = {error_image}></img></div>}
             {error && <div className="error">{error}</div>}
                 <button className="next" onClick={nextClickHandler}>Próxima</button>

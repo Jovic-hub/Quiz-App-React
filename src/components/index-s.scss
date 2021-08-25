@@ -50,6 +50,28 @@ body {
     }
   }
   
+  .button-end {
+    border: 3px solid black;
+    background: greenyellow;
+    border-radius: 5px;
+    height: 3em;
+    width: 40vw;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 0 0 black;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    outline: 0;
+    color:black;
+    &:hover {
+      box-shadow: 10px 10px 0 0 black;
+    }
+  }
+
   .selected {
     background: lime;
     box-shadow: 10px 10px 0 0 black;

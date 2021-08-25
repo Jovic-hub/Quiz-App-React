@@ -5,6 +5,7 @@ import easy_3 from './images/easy_result_higher_1.jpg'
 import med_1 from './images/med_result_1.jpg'
 import med_2 from './images/med_result_2.jpg'
 import med_3 from './images/med_result_3.jpg'
+import Questions from './Questions';
 const End = ({results, data, diff}) => {
     const [correctAnswers, setCorrectAsnwers] = useState(0);
     useEffect(()=>{
@@ -16,6 +17,12 @@ const End = ({results, data, diff}) => {
         });
         setCorrectAsnwers(correct);
     },[]);
+    function backHome(){
+        window.location.reload(false);
+    }
+    function playAgain(){
+
+    }
     if(diff == 1){
         let numOfQuest = 5;
         if(correctAnswers >= 4){
@@ -31,6 +38,8 @@ const End = ({results, data, diff}) => {
                     </div>
                     <img class ="option-image" src ={easy_1}></img> 
                     </div>
+                    <a class ="button-end" onClick={backHome}>Trocar Dificuldade</a>
+                    <a class ="button-end" onClick={playAgain}>Jogar Novamente</a>
                 </center>
             )         
         }else if(correctAnswers == 3){
