@@ -5,6 +5,60 @@
       "image": "1_easy.jpg",
       "choices": ["Jing", "Ging", "Gong", "Gin"],
       "answer": "Ging"
-    } 
+    },
+    {
+      "question": "Qual o sobrenome do Hisoka?",
+      "image": "2_easy.jpg",
+      "choices": ["Morow", "Marow", "Molow", "Merew"],
+      "answer": "Morow"
+    },
+    {
+      "question": "No jogo Greed Island, qual o comando de voz que o Jogador tem que fazer pra abrir o livro de cartas?",
+      "image": "3_easy.jpg",
+      "choices": ["Card", "Hook", "Book", "Open"],
+      "answer": "Book"
+    },
+    {
+      "question": "Quem é o Lider da Trupe Fantasma?",
+      "image": "4_easy.jpg",
+      "choices": ["Chrollo Lucilfer", "Feitan Portor", "Hisoka", "Uvogin"],
+      "answer": "Chrollo Lucilfer"
+    },
+    {
+      "question": "Qual o tipo de Nen do Gon?",
+      "image": "5_easy.jpg",
+      "choices": ["Emissão", "Materialização", "Reforço", "Transformação"],
+      "answer": "Reforço"
+    },
+    {
+      "question": "Quais são as cores do skate do Killua?",
+      "image": "6_easy.jpg",
+      "choices": ["Azul e Vermelho", "Azul e Verde", "Amarelo e Azul", "Amarelo e Vermelho"],
+      "answer": "Amarelo e Vermelho"
+    },
+    {
+      "question": "Qual personagem luta contra o Gon na ultima etapa do exame Hunter?",
+      "image": "7_easy.jpg",
+      "choices": ["Hisoka", "Hanzo", "Pokkle", "Illumi"],
+      "answer": "Hanzo"
+    },
+    {
+      "question": "Quem é o primeiro examinador do 287º Exame Hunter?",
+      "image": "8_easy.jpg",
+      "choices": ["Satotz", "Lippo", "Menchi", "Netero"],
+      "answer": "Satotz"
+    },
+    {
+      "question": "Onde Gon foi criado?",
+      "image": "9_easy.jpg",
+      "choices": ["Ilha Freecs", "Ilha do Peixe", "Ilha da pesca", "Ilha da Baleia"],
+      "answer": "Ilha da Baleia"
+   },
+   {
+      "question": "Qual tipo de Nen não existe em Hunter x Hunter?",
+      "image": "10_easy.jpg",
+      "choices": ["Reforço", "Materialização", "Especialização", "Eliminação"],
+      "answer": "Eliminação"
+    }
     ]
   }

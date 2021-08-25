@@ -62,7 +62,7 @@ return (
       />}
       {step === 3 && <Questions data={random_med[activeQuestion]} 
       onAnswerUpdate={setAnswers} 
-      numberOfQuestions={3} 
+      numberOfQuestions={7} 
       activeQuestion={activeQuestion}
       onSetActiveQuestion={setActiveQuestion}
       onSetStep={setStep}
@@ -70,7 +70,7 @@ return (
       />}
       {step === 4 && <Questions data={random_hard[activeQuestion]} 
       onAnswerUpdate={setAnswers} 
-      numberOfQuestions={5} 
+      numberOfQuestions={10} 
       activeQuestion={activeQuestion}
       onSetActiveQuestion={setActiveQuestion}
       onSetStep={setStep}
@@ -79,14 +79,17 @@ return (
       {step === 5 && <End 
       results={answers}
       data={random}
+      diff={1}
       />}
       {step === 6 && <End 
       results={answers}
       data={random_med}
+      diff={2}
       />}
       {step === 7 && <End 
       results={answers}
       data={random_hard}
+      diff={3}
       />}
     </div>
   );

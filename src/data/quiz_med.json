@@ -17,6 +17,30 @@
       "image": "3_med.jpg",
       "choices": ["Gungi", "Senji", "Wing", "Mungi"],
       "answer": "Gungi"
+    },
+    {
+      "question": "Onde foi o primeiro encontro de Gon e Ging?",
+      "image": "4_med.jpg",
+      "choices": ["Uma Luta", "Assossiação Hunter", "Greed Island", "Em uma Arvore"],
+      "answer": "Assossiação Hunter"
+    },
+    {
+      "question": "Qual o nome do animal de estimação da Familia Zoldyck?",
+      "image": "5_med.png",
+      "choices": ["Mike", "Scott", "Nak", "Kime"],
+      "answer": "Mike"
+    },
+    {
+      "question": "Qual dos personagens principais tem o tipo de Nen Emissão?",
+      "image": "6_med.jpg",
+      "choices": ["Gon", "Kurapika", "Leorio", "Killua"],
+      "answer": "Leorio"
+    },
+    {
+      "question": "Onde fica a casa da Familia Zoldyck?",
+      "image": "7_med.jpg",
+      "choices": ["Montanha Kukuroo", "Montanha Zuku", "Montanha Zoldyck", "Montanha Kurukoo"],
+      "answer": "Montanha Kukuroo"
     }
     ]
   }
